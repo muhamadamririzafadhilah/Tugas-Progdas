@@ -106,8 +106,6 @@ void printAll(const studentType a[], int n, ostream &out)
     out << left << setw(NAME_COL) << "Nama (Last, First)"
         << right << setw(8) << "Skor"
         << setw(8) << "Grade" << '\n';
-    out << string(NAME_COL + 16, '-') << '\n';
-
     for (int i = 0; i < n; ++i)
     {
         string formattedName = a[i].studentLName + ", " + a[i].studentFName;
@@ -130,3 +128,4 @@ void printTopStudents(const studentType a[], int n, int highest, ostream &out)
         }
     }
 }
+
